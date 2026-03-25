@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collection Form </title>
+</head>
+<body>
+    <h1 align="center"><mark>Student Data Collection Form</mark></h1>
+    <p align="center">
+        <b>
+            Please fill all the details carefully. 
+        </b>
+        <i>
+            All fields are mandatory.
+        </i>
+        <u>
+            Make sure information is correct.
+        </u>
+    </p>
+    <hr>
+    <fieldset>
+    <legend>Personal Information</legend>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="age">Age:</label>
+<input type="number" id="age" name="age" min="0" required><br><br>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+    
+    <label for="photo">Upload a Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+</fieldset>
+
+<fieldset>
+    <legend>Academic Information</legend>
+    
+    <p>Branch:</p>
+    <input type="radio" id="bca" name="branch" value="BCA" required>
+    <label for="bca">BCA</label>
+    <input type="radio" id="btech" name="branch" value="B.Tech">
+    <label for="btech">B.Tech</label>
+    
+    <p>Skills:</p>
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label>
+    <input type="checkbox" id="js" name="skills" value="JavaScript">
+    <label for="js">JavaScript</label>
+    <input type="checkbox" id="python" name="skills" value="Python">
+    <label for="python">Python</label>
+    
+    <p>Portfolio URL:</p>
+    <input type="url" name="portfolio" placeholder="https://example.com" required>
+
+    <p>Study Time:</p>
+    <input type="time" name="study-time" required>
+
+    <p>Preferred Week:</p>
+    <input type="week" name="preferred-week" required>
+
+    <p>Preferred Month:</p>
+    <input type="month" name="preferred-month" required>
+
+    <p>Date & Time of Admission:</p>
+    <input type="datetime-local" name="admission" required>
+</fieldset>
+
+
+<fieldset>
+    <legend>Feedback Session</legend>
+    
+    <p>Rate your HTML knowledge on 0 to 10:</p>
+    <input type="range" name="html-knowledge" min="0" max="10" step="1" value="5">
+    
+    <p>Write your feedback:</p>
+    <textarea name="feedback" rows="4" cols="50" placeholder="Type your feedback here..."></textarea>
+    
+    <p>
+        <mark>Note: </mark>
+        Range is between 0 to 10.
+    </p>
+</fieldset>
+
+<div style="text-align: center;">
+    <input type="submit" value="Submit Form">
+    <input type="reset" value="Reset Form">
+</div>
+<hr>
+<P align="center">
+    <b>Thank you for registering!</b>
+    <i>We will contact you soon.</i>
+</P>
+</body>
+</html>
